@@ -16,6 +16,13 @@
     align-items: center;
 }
 
+
+.bordring {
+    border: 1px solid red;
+}
+
+
+
 .coloring-text {
     color: var(--text-color) !important;
 }
@@ -26,9 +33,28 @@ html {
     background: var(--bg-color);
 }
 
-.navbar {
+
+.bg-anim {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.bg-anim div {
+    height: 100%;
     background: var(--bg-color);
+    transform: translateY(-100%);
+    animation: bgAnim .8s linear forwards;
+    animation-delay: calc(var(--t)*0.2s);
+}
+
+
+.navbar {
     margin: auto;
+    background: var(--bg-color);
+    z-index: 1;
 }
 
 .navbar .nav-link {
@@ -69,12 +95,15 @@ html {
     box-shadow: none;
 }
 
-.intro {
-    background: var(--bg-color);
-}
 
-.bordring {
-    border: 1px solid red;
+/*                 ////////////////////////////////                      */
+
+.intro {
+    background: transparent;
+    z-index: 5;
+    position: relative;
+    animation: afterBgAnimEnd 0.1s linear forwards;
+    animation-delay: 1.6s;
 }
 
 .name {
@@ -86,6 +115,29 @@ html {
     border: 1px solid var(--text-color) !important;
     color: var(--text-color) !important;
 
+}
+
+.dis p {
+    transform: translateY(-20px);
+    opacity: 0;
+    animation: introAnim 1s ease-out forwards;
+    animation-delay: 2.3s;
+
+}
+
+.dis h1 {
+    transform: translateY(-20px);
+    opacity: 0;
+    animation: introAnim 1s ease-out forwards;
+    animation-delay: 2s;
+}
+
+
+.btn-like {
+    transform: translateY(20px);
+    opacity: 0;
+    animation: revIntroAnim 1s ease-out forwards;
+    animation-delay: 2s;
 }
 
 .btn-like ul li {
@@ -103,44 +155,20 @@ html {
 
 li svg {
     color: var(--text-color) !important;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-@media (max-width: 1200px) {
-    .intro .row .btn-like {
-        display: flex;
-        justify-content: space-around;
-        flex-direction: column !important;
-    }
-
-    .btn-like ul {
-        margin-top: 20px;
-    }
+.exper div span {
+    font-size: 60px !important;
 }
 
-@media (max-width: 570px) {
-    .intro .dis p {
-        font-size: 15px !important;
-    }
-
-    .intro .dis h1 {
-        font-size: 40px !important;
-    }
-
-    .intro .dis .mian-btn {
-        font-size: 15px !important;
-    }
-
-    .btn-like ul li {
-        width: 30px;
-        height: 30px;
-        font-size: 20px;
-    }
-
-}
-
-@media (max-width: 768px) {
-    .intro .exper div{
-        margin-top: 15px;
-    }
+.exper div {
+    width: 300px !important;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.486);
+    transform: translateY(20px);
+    opacity: 0;
+    animation: revIntroAnim 1s ease-out forwards;
+    animation-delay: var(--t);
 }

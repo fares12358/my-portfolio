@@ -1,0 +1,44 @@
+@keyframes bgAnim {
+    0% {
+        transform: translateY(-100%);
+
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes afterBgAnimEnd {
+    to {
+        background: var(--bg-color);
+    }
+}
+
+
+
+@keyframes introAnim {
+    0% {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
+}
+
+@keyframes revIntroAnim {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
+}

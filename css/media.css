@@ -1,0 +1,38 @@
+
+@media (max-width: 1200px) {
+    .intro .row .btn-like {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column !important;
+    }
+
+    .btn-like ul {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 570px) {
+    .intro .dis p {
+        font-size: 15px !important;
+    }
+
+    .intro .dis h1 {
+        font-size: 40px !important;
+    }
+
+    .intro .dis .mian-btn {
+        font-size: 15px !important;
+    }
+
+    .btn-like ul li {
+        width: 30px;
+        height: 30px;
+        font-size: 20px;
+    }
+
+}
+@media (max-width: 768px) {
+    .intro .exper div{
+        margin-top: 15px;
+    }
+}
