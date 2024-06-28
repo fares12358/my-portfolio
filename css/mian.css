@@ -40,6 +40,7 @@ html {
     position: absolute;
     top: 0;
     left: 0;
+    background: transparent;
 }
 
 .bg-anim div {
@@ -48,6 +49,7 @@ html {
     transform: translateY(-100%);
     animation: bgAnim .8s linear forwards;
     animation-delay: calc(var(--t)*0.2s);
+
 }
 
 
@@ -104,6 +106,7 @@ html {
     position: relative;
     animation: afterBgAnimEnd 0.1s linear forwards;
     animation-delay: 1.6s;
+
 }
 
 .name {
@@ -122,6 +125,7 @@ html {
     opacity: 0;
     animation: introAnim 1s ease-out forwards;
     animation-delay: 2.3s;
+
 
 }
 
@@ -159,6 +163,48 @@ li svg {
     align-items: center;
     justify-content: center;
 }
+.img-holder{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(20px);
+    opacity: 0;
+    animation: revIntroAnim 1s ease-out forwards;
+    animation-delay: 2s;
+
+}
+
+.intro .border-img  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 440px;
+    width: 440px;
+    border-radius: 50%;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.17)0px -18px 25px 15px inset,
+    rgba(0, 0, 0, 0.17)0px 18px 20px 18px inset;
+}
+
+.intro .border-img::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border: 2px solid var(--text-color);
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    border-radius: 50%;
+    animation: borderAnim 10s linear infinite;
+}
+
+
+.intro .border-img img {
+    max-width: 80%;
+    filter: drop-shadow(2px 8px 15px #00f5937b);
+}
+
+
 
 .exper div span {
     font-size: 60px !important;
@@ -171,4 +217,12 @@ li svg {
     opacity: 0;
     animation: revIntroAnim 1s ease-out forwards;
     animation-delay: var(--t);
+}
+
+.services-content{
+    display: none;
+    background: var(--bg-color);
+    position: relative;
+    z-index: 5;
+
 }
