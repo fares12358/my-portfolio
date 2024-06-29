@@ -182,8 +182,24 @@ li svg {
     width: 440px;
     border-radius: 50%;
     position: relative;
-    box-shadow: rgba(0, 0, 0, 0.17)0px -18px 25px 15px inset,
-    rgba(0, 0, 0, 0.17)0px 18px 20px 18px inset;
+    overflow: hidden;
+    opacity: 0;
+    animation: imgOpacity 0.5s linear forwards;
+    animation-delay: 2.4s;
+
+}
+
+.intro .border-img::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border: 2px solid var(--text-color);
+    border-left: 2px solid transparent;
+    border-right: 1px solid transparent;
+    border-radius: 50%;
+    animation: borderAnim 10s linear infinite;
+    z-index: 1;
 }
 
 .intro .border-img::after{
@@ -191,19 +207,19 @@ li svg {
     width: 100%;
     height: 100%;
     position: absolute;
-    border: 2px solid var(--text-color);
-    border-left: 1px solid transparent;
-    border-right: 1px solid transparent;
+    border: 0px solid transparent;
     border-radius: 50%;
-    animation: borderAnim 10s linear infinite;
+    box-shadow: inset 50px 50px 60px black,
+    inset  -55px -55px 60px black;
 }
 
 
 .intro .border-img img {
-    max-width: 80%;
-    filter: drop-shadow(2px 8px 15px #00f5937b);
+    max-width: 100%;
+    opacity: 0;
+    animation: imgOpacity 0.5s linear forwards;
+    animation-delay: 2.5s;
 }
-
 
 
 .exper div span {
