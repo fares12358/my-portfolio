@@ -52,7 +52,6 @@ html {
 
 }
 
-
 .navbar {
     margin: auto;
     background: var(--bg-color);
@@ -163,7 +162,8 @@ li svg {
     align-items: center;
     justify-content: center;
 }
-.img-holder{
+
+.img-holder {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -174,7 +174,7 @@ li svg {
 
 }
 
-.intro .border-img  {
+.intro .border-img {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -186,31 +186,33 @@ li svg {
     opacity: 0;
     animation: imgOpacity 0.5s linear forwards;
     animation-delay: 2.4s;
-
 }
 
-.intro .border-img::before{
+.intro .border-img::before {
     content: '';
     width: 100%;
     height: 100%;
     position: absolute;
     border: 2px solid var(--text-color);
     border-left: 2px solid transparent;
-    border-right: 1px solid transparent;
+    border-right: 2px solid transparent;
     border-radius: 50%;
     animation: borderAnim 10s linear infinite;
     z-index: 1;
 }
 
-.intro .border-img::after{
+.intro .border-img::after {
     content: '';
     width: 100%;
     height: 100%;
     position: absolute;
     border: 0px solid transparent;
     border-radius: 50%;
-    box-shadow: inset 50px 50px 60px black,
-    inset  -55px -55px 60px black;
+    box-shadow: inset 0px 0px 20px black,
+        inset 0px 0px 40px black,
+        inset 0px 0px 60px black,
+        inset 0px 0px 100px black,
+        inset 0px 0px 200px black;
 }
 
 
@@ -235,7 +237,7 @@ li svg {
     animation-delay: var(--t);
 }
 
-.services-content{
+.services-content {
     display: none;
     background: var(--bg-color);
     position: relative;
