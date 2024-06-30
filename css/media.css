@@ -8,6 +8,10 @@
     .btn-like ul {
         margin-top: 20px;
     }
+    
+    .data-card svg{
+        font-size: 50px !important;
+}
 }
 
 
@@ -50,7 +54,6 @@
 
 }
 
-
 @media (max-width: 768px) {
     .intro .exper div {
         margin-top: 15px;
@@ -63,5 +66,9 @@
     .intro .border-img {
         width: 300px;
         height: 300px;
+    }
+    .services-content .row div{
+        max-width:90% ;
+        text-align: center;
     }
 }

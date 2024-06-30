@@ -47,8 +47,6 @@ html {
     height: 100%;
     background: var(--bg-color);
     transform: translateY(-100%);
-    animation: bgAnim .8s linear forwards;
-    animation-delay: calc(var(--t)*0.2s);
 
 }
 
@@ -95,6 +93,10 @@ html {
 .navbar .navbar-toggler:focus {
     box-shadow: none;
 }
+.navbar a{
+    cursor: pointer;
+
+}
 
 
 /*                 ////////////////////////////////                      */
@@ -104,7 +106,7 @@ html {
     z-index: 5;
     position: relative;
     animation: afterBgAnimEnd 0.1s linear forwards;
-    animation-delay: 1.6s;
+    animation-delay: 1s;
 
 }
 
@@ -112,7 +114,7 @@ html {
     font-size: 60px;
 }
 
-.mian-btn {
+.main-btn {
     background: transparent !important;
     border: 1px solid var(--text-color) !important;
     color: var(--text-color) !important;
@@ -123,16 +125,14 @@ html {
     transform: translateY(-20px);
     opacity: 0;
     animation: introAnim 1s ease-out forwards;
-    animation-delay: 2.3s;
-
-
+    animation-delay: 1.3s;
 }
 
 .dis h1 {
     transform: translateY(-20px);
     opacity: 0;
     animation: introAnim 1s ease-out forwards;
-    animation-delay: 2s;
+    animation-delay: 1.5s;
 }
 
 
@@ -140,7 +140,7 @@ html {
     transform: translateY(20px);
     opacity: 0;
     animation: revIntroAnim 1s ease-out forwards;
-    animation-delay: 2s;
+    animation-delay: 1.5s;
 }
 
 .btn-like ul li {
@@ -170,7 +170,7 @@ li svg {
     transform: translateY(20px);
     opacity: 0;
     animation: revIntroAnim 1s ease-out forwards;
-    animation-delay: 2s;
+    animation-delay: 1s;
 
 }
 
@@ -185,7 +185,7 @@ li svg {
     overflow: hidden;
     opacity: 0;
     animation: imgOpacity 0.5s linear forwards;
-    animation-delay: 2.4s;
+    animation-delay: 1.2s;
 }
 
 .intro .border-img::before {
@@ -220,7 +220,7 @@ li svg {
     max-width: 100%;
     opacity: 0;
     animation: imgOpacity 0.5s linear forwards;
-    animation-delay: 2.5s;
+    animation-delay: 1.4s;
 }
 
 
@@ -233,7 +233,7 @@ li svg {
     box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.486);
     transform: translateY(20px);
     opacity: 0;
-    animation: revIntroAnim 1s ease-out forwards;
+    animation: revIntroAnim 0.6s ease-out forwards;
     animation-delay: var(--t);
 }
 
@@ -243,4 +243,86 @@ li svg {
     position: relative;
     z-index: 5;
 
+}
+.services-content .row div{
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.486);
+    width: 600px;
+    transform: translateY(20px);
+    opacity: 0;
+    animation: revIntroAnim 0.4s ease-out forwards;
+    animation-delay: calc(var(--t)*0.1s);
+}
+
+
+/*                 ////////////////////////////////                      */
+
+
+
+.resume{
+    display: none;
+    background: var(--bg-color);
+    position: relative;
+    z-index: 5;
+}
+.btns-dom{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    max-height: 400px;
+}
+.btns-dom .active{
+    background: var(--text-color) !important;
+    color: var(--bg-color) !important;
+
+}
+.res-btn {
+    border: none !important;
+    background: #28272c !important;
+    color: var(--light-color) !important;
+    width: 80%;
+    cursor: pointer;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.486);
+
+
+}
+.res-btn:focus {
+    box-shadow: none !important;
+}
+.data-card{
+    background: #28272c;
+    border-radius: 20px;
+}
+.data-card p{
+    color: var(--text-color);
+}
+.data-card svg{
+    font-size: 80px !important;
+}
+
+
+
+
+
+
+
+
+
+/*                 ////////////////////////////////                      */
+
+
+.work{
+    display: none;
+    background: var(--bg-color);
+    position: relative;
+    z-index: 5;
+}
+
+/*                 ////////////////////////////////                      */
+
+
+.content{
+    display: none;
+    position: relative;
+    z-index: 5;
 }

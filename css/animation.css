@@ -1,5 +1,7 @@
-
-
+.animBg {
+    animation: bgAnim .4s linear forwards;
+    animation-delay: calc(var(--t)*0.1s);
+}
 
 @keyframes bgAnim {
     0% {
@@ -51,39 +53,43 @@
 
 
 @keyframes openAntherPage {
-    0%{
+    0% {
         opacity: 1;
     }
-    10%{
+
+    10% {
         opacity: 0;
         transform: translateY(-100%);
     }
-    10.1%{
+
+    10.1% {
         opacity: 1;
     }
-    100%{
-            transform: translateY(0);
+
+    100% {
+        transform: translateY(0);
     }
 
 }
 
 
 @keyframes borderAnim {
-    0%{
+    0% {
         transform: rotate(0deg);
     }
-    100%{
+
+    100% {
         transform: rotate(360deg);
     }
 }
 
 
 @keyframes imgOpacity {
-    0%{
+    0% {
         opacity: 0;
     }
-    100%{
+
+    100% {
         opacity: 1;
     }
 }
-

@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="a Portfolio web site to introduce my self as a front end web development">
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="css/mian.css">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css.map">
@@ -42,20 +43,22 @@
             <div class="collapse navbar-collapse " id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto me-0">
                     <li class="nav-item fw-bold fs-5 px-3 ">
-                        <a class="nav-link active home " aria-current="page">Home</a>
+                        <a class="nav-link active home-btn " aria-current="page">Home</a>
                     </li>
                     <li class="nav-item fw-bold fs-5 px-3 ">
-                        <a class="nav-link services">Services</a>
+                        <a class="nav-link services-btn">Services</a>
                     </li>
                     <li class="nav-item fw-bold fs-5 px-3 ">
-                        <a class="nav-link">Resume</a>
+                        <a class="nav-link resume-btn">Resume</a>
                     </li>
                     <li class="nav-item fw-bold fs-5 px-3 ">
-                        <a class="nav-link">Work</a>
+                        <a class="nav-link work-btn">Work</a>
                     </li>
+<!--
                     <li class="nav-item fw-bold fs-5 px-3 ">
-                        <a class="nav-link">Contact</a>
+                        <a class="nav-link content-btn">Contact</a>
                     </li>
+                    -->
                     <!--
                     <li class="nav-item p-2">
                         <button class="main-btn btn btn-primary text-black fw-bold px-4">Hire me</button>
@@ -81,7 +84,7 @@
                         coding . welcome.
                     </p>
                     <div class="btn-like mt-5 flexing justify-content-between  flex-lg-row flex-md-column">
-                        <div id="getCV" class="btn mian-btn btn-primary px-3 py-2 fs-5 fw-bold rounded-pill">
+                        <div id="getCV" class="btn main-btn btn-primary px-3 py-2 fs-5 fw-bold rounded-pill">
                             Download CV
                             <i class="fa-solid fa-download ms-3 "></i>
                         </div>
@@ -117,33 +120,90 @@
                 </div>
             </div>
             <div class="exper row justify-content-around  text-center mt-5 gap-3">
-                <div class=" col-md-3  col-sm-6 text-light p-0  " style="--t:2.2s;">
-                    <span class=" fw-bold coloring-text">3</span>
+                <div class=" col-md-3  col-sm-6 text-light p-0  " style="--t:1.7s;">
+                    <span class=" fw-bold coloring-text">2</span>
                     <p class=" fw-bold fs-4 mt-3">years of experience</p>
                 </div>
-                <div class="col-md-3 col-sm-6 text-light  p-0 " style="--t:2.4s;">
+                <div class="col-md-3 col-sm-6 text-light  p-0 " style="--t:1.8s;">
                     <span class="fw-bold coloring-text ">6</span>
                     <p class="fw-bold fs-4 mt-3">Projects completed</p>
                 </div>
-                <div class="col-md-3 col-sm-6 text-light p-0 " style="--t:2.6s;">
-                    <span class="fw-bold coloring-text">5</span>
+                <div class="col-md-3 col-sm-6 text-light p-0 " style="--t:1.9s;">
+                    <span class="fw-bold coloring-text">7</span>
                     <p class="fw-bold fs-4 mt-3">Technologies</p>
                 </div>
-                <div class="col-md-3 col-sm-6 text-light p-0 " style="--t:2.8s;">
-                    <span class="fw-bold coloring-text">12</span>
-                    <p class="fw-bold fs-4 mt-3">Code commits</p>
+                <div class="col-md-3 col-sm-6 text-light p-0 " style="--t:2s;">
+                    <span class="fw-bold coloring-text">45</span>
+                    <p class="fw-bolder fs-4 mt-3">Code commits</p>
                 </div>
             </div>
         </div>
     </section>
 
     <section class="services-content py-5">
-        <div class="container">
-            <div class="row">
-                <h1 class="text-light">fares services</h1>
+        <div class="container py-5 fw-bold">
+            <div class="row gap-2 justify-content-center ">
+                <div class="card-ser col-md-6 col-sm-6 text-light p-5 m-2 " style="--t:1;">
+                    <h1>01</h1>
+                    <h2>Web Development</h2>
+                    <p class="text-white-50">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, amet.</p>
+                </div>
+                <div class="card-ser col-md-6 col-sm-6  text-light p-5 m-2" style="--t:2;">
+                    <h1>02</h1>
+                    <h2>UI / Ux Design</h2>
+                    <p class="text-white-50">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, amet.</p>
+                </div>
+                <div class="card-ser col-md-6 col-sm-6 text-light p-5 m-2" style="--t:3;">
+                    <h1>03</h1>
+                    <h2>SEO</h2>
+                    <p class="text-white-50">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, amet.</p>
+                </div>
+                <div class="card-ser col-md-6 col-sm-6  text-light p-5 m-2" style="--t:4;">
+                    <h1>04</h1>
+                    <h2>Logo design</h2>
+                    <p class="text-white-50">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, amet.</p>
+                </div>
             </div>
         </div>
     </section>
+
+    <section class="resume py-5 ">
+        <div class="container py-5">
+            <div class="row">
+                <div class="btns-dom col-sm-12 col-md-4 text-light p-5  ">
+                    <button class="res-btn btn btn-primary my-2 p-sm-2 p-md-3 fw-bold active"
+                        onclick="DomFunction(1)">Experience</button>
+                    <button class="res-btn btn btn-primary my-2 p-sm-2 p-md-3 fw-bold"
+                        onclick="DomFunction(2)">Education</button>
+                    <button class="res-btn btn btn-primary my-2 p-sm-2 p-md-3 fw-bold"
+                        onclick="DomFunction(3)">Skills</button>
+                    <button class="res-btn btn btn-primary my-2 p-sm-2 p-md-3 fw-bold" onclick="DomFunction(4)">About
+                        me</button>
+                </div>
+
+                <div class="dom-viewer col-sm-12 col-md-8 p-5  text-center text-md-start">
+                    <h1 class="text-light fw-bold">My experience</h1>
+                    <p class="text-white-50 lh-lg my-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
+                        exercitationem corporis recusandae, repudiandae illo quia at ad ex doloremque deleniti.
+                    </p>
+                    <div class="row ">
+                        <div class="data-card col-md-6 col-12 text-center py-4">
+                            <p class="">2021 - 2024</p>
+                            <h3 class="text-light">
+                            </h3>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="work">
+        <h1 class="text-light">work</h1>
+    </section>
+
 
 
 
@@ -153,4 +213,5 @@
     <script src="js/main.js"></script>
 
 </body>
+
 </html>
