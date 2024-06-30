@@ -72,7 +72,7 @@ servicesBtn.onclick = function () {
 let resume = document.querySelector(".resume");
 let resumeBtn = document.querySelector(".resume-btn");
 
-resumeBtn.onclick = function () {
+resumeBtn.onclick = function(){
 
     bgAnim.forEach((ele) => {
         ele.classList.remove("animBg");
@@ -101,19 +101,6 @@ workBtn.onclick = function () {
 }
 
 
-
-let content = document.querySelector(".content");
-let contentBtn = document.querySelector(".content-btn");
-
-contentBtn.onclick = function () {
-
-    sections.forEach((ele) => {
-        ele.style.display = "none";
-    });
-
-    content.style.display = "block";
-
-}
 
 
 let btnRes = document.querySelectorAll(".btns-dom button");
@@ -194,6 +181,7 @@ let aboutDom=`
 `;
 
 function DomFunction(i) {
+
     if (i === 1) {
         domViewer.innerHTML = experinceDom;
         btnActive=btnRes[0];
@@ -206,6 +194,9 @@ function DomFunction(i) {
     }else if(i===4){
         domViewer.innerHTML = aboutDom;
         btnActive=btnRes[3];
+    }else{
+        domViewer.innerHTML = experinceDom;
+        btnActive=btnRes[0];
     }
 
     btnRes.forEach((ele) => {
