@@ -8,10 +8,15 @@
     .btn-like ul {
         margin-top: 20px;
     }
-    
-    .data-card svg{
+
+    .data-card svg {
         font-size: 50px !important;
-}
+    }
+
+    .work .row .text-holder ,.work .row .image-holder{
+        width: 100%;
+        text-align: center !important;
+    }
 }
 
 
@@ -67,8 +72,9 @@
         width: 300px;
         height: 300px;
     }
-    .services-content .row div{
-        max-width:90% ;
+
+    .services-content .row div {
+        max-width: 90%;
         text-align: center;
     }
 }
