@@ -341,6 +341,7 @@ li svg {
 .work .image img{
     max-width: 100%;
     height: auto;
+    transition: 0.5s;
 
 }
 .work .btn-view{

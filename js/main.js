@@ -1,7 +1,5 @@
 
-
 let getCv = document.getElementById("getCV");
-
 
 getCv.onclick = function () {
 
@@ -19,7 +17,6 @@ getCv.onclick = function () {
     document.body.removeChild(link);
 }
 
-
 let bgAnim = document.querySelectorAll(".bg-anim div");
 
 window.addEventListener('load', function () {
@@ -29,15 +26,9 @@ window.addEventListener('load', function () {
 });
 
 
-
-
-
-
 let sections = document.querySelectorAll("section");
-
 let home = document.querySelector(".intro");
 let homeBtn = document.querySelector(".home-btn");
-
 
 homeBtn.onclick = function () {
 
@@ -51,9 +42,6 @@ homeBtn.onclick = function () {
     home.style.display = "block";
 
 }
-
-
-
 
 let servicesCon = document.querySelector(".services-content");
 let servicesBtn = document.querySelector(".services-btn");
@@ -72,7 +60,7 @@ servicesBtn.onclick = function () {
 let resume = document.querySelector(".resume");
 let resumeBtn = document.querySelector(".resume-btn");
 
-resumeBtn.onclick = function(){
+resumeBtn.onclick = function () {
 
     bgAnim.forEach((ele) => {
         ele.classList.remove("animBg");
@@ -86,11 +74,13 @@ resumeBtn.onclick = function(){
 
 }
 
-
 let work = document.querySelector(".work");
 let workBtn = document.querySelector(".work-btn");
 
 workBtn.onclick = function () {
+    bgAnim.forEach((ele) => {
+        ele.classList.remove("animBg");
+    })
 
     sections.forEach((ele) => {
         ele.style.display = "none";
@@ -99,9 +89,6 @@ workBtn.onclick = function () {
     work.style.display = "block";
 
 }
-
-
-
 
 let btnRes = document.querySelectorAll(".btns-dom button");
 let domViewer = document.querySelector(".resume .dom-viewer");
@@ -120,7 +107,7 @@ let experinceDom = `
                     </div>
 `;
 
-let educationDom=`
+let educationDom = `
                     <h1 class="text-light fw-bold">My education</h1>
                     <p class="text-white-50 lh-lg my-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit exercitationem corporis recusandae, repudiandae illo quia at ad ex doloremque deleniti.
                     </p>
@@ -139,7 +126,7 @@ let educationDom=`
                         </div>
                     </div>
 `;
-let skillsDom=`
+let skillsDom = `
                     <h1 class="text-light fw-bold">My skills</h1>
                     <p class="text-white-50 lh-lg my-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
                         exercitationem corporis recusandae, repudiandae illo quia at ad ex doloremque deleniti.
@@ -165,7 +152,7 @@ let skillsDom=`
 
 `;
 
-let aboutDom=`
+let aboutDom = `
                     <h1 class="text-light fw-bold">About me</h1>
                     <p class="text-white-50 lh-lg my-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
                         exercitationem corporis recusandae, repudiandae illo quia at ad ex doloremque deleniti.
@@ -184,23 +171,174 @@ function DomFunction(i) {
 
     if (i === 1) {
         domViewer.innerHTML = experinceDom;
-        btnActive=btnRes[0];
-    }else if(i===2){
+        btnActive = btnRes[0];
+    } else if (i === 2) {
         domViewer.innerHTML = educationDom;
-        btnActive=btnRes[1];
-    }else if(i===3){
+        btnActive = btnRes[1];
+    } else if (i === 3) {
         domViewer.innerHTML = skillsDom;
-        btnActive=btnRes[2];
-    }else if(i===4){
+        btnActive = btnRes[2];
+    } else if (i === 4) {
         domViewer.innerHTML = aboutDom;
-        btnActive=btnRes[3];
-    }else{
+        btnActive = btnRes[3];
+    } else {
         domViewer.innerHTML = experinceDom;
-        btnActive=btnRes[0];
+        btnActive = btnRes[0];
     }
 
     btnRes.forEach((ele) => {
         ele.classList.remove("active");
         btnActive.classList.add("active");
     });
+}
+
+///////////////////////////////////////////////////////////////////////////////
+
+
+let imgProject = document.querySelector(".image-holder .image img");
+
+let textViewerDom = document.querySelector(".text-holder");
+
+
+let DomP1 = `
+
+
+<h1 class="text-light py-2">01</h1>
+
+<h2 class="text-light py-2 mt-3">404 Page</h2>
+
+<p class="text-light text-white-50 fz mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    Mollitia ratione placeat
+</p>
+
+<span class="coloring-text mt-2">Html 5, Css 3, Javascript</span>
+
+<hr class="text-white-50 m-5">
+
+
+<div class="open-btn d-flex align-items-center justify-content-center gap-3">
+    <span class="icon fs-2 px-3 py-2">
+        <a target="_blank" href="https://fares12358.github.io/Xcompany/">
+            <i class="fa-solid fa-arrow-up-right-from-square text-light"></i>
+        </a>
+    </span>
+    <span class="icon fs-2 px-3 py-2 ">
+        <a target="_blank" href="https://github.com/fares12358/Xcompany">
+            <i class="fa-brands fa-github text-light"></i>
+        </a>
+    </span>
+
+</div>
+
+<hr class="text-white-50 m-5">
+
+<div class="btn-view  mt-5 d-flex align-items-center justify-content-center gap-3">
+    <span class="go-back" onclick="viewProject(3)" ><i class="fa-solid fa-arrow-left"></i></span>
+    <span class="go-next" onclick="viewProject(2)"><i class="fa-solid fa-arrow-right"></i></span>
+</div>
+
+`;
+
+// "img/Untitled.png";
+
+
+
+let DomP2 = `
+
+<h1 class="text-light py-2">02</h1>
+
+<h2 class="text-light py-2 mt-3">island landing page</h2>
+
+<p class="text-light text-white-50 fz mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    Mollitia ratione placeat
+</p>
+
+<span class="coloring-text mt-2">Html 5, Css 3, Javascript</span>
+
+<hr class="text-white-50 m-5">
+
+
+<div class="open-btn d-flex align-items-center justify-content-center gap-3">
+    <span class="icon fs-2 px-3 py-2">
+        <a target="_blank" href="https://fares12358.github.io/island">
+            <i class="fa-solid fa-arrow-up-right-from-square text-light"></i>
+        </a>
+    </span>
+    <span class="icon fs-2 px-3 py-2 ">
+        <a target="_blank" href="https://github.com/fares12358/island">
+            <i class="fa-brands fa-github text-light"></i>
+        </a>
+    </span>
+
+</div>
+
+<hr class="text-white-50 m-5">
+
+<div class="btn-view  mt-5 d-flex align-items-center justify-content-center gap-3">
+    <span class="go-back" onclick="viewProject(1)" ><i class="fa-solid fa-arrow-left"></i></span>
+    <span class="go-next" onclick="viewProject(3)"><i class="fa-solid fa-arrow-right"></i></span>
+</div>
+
+
+`;
+
+//"img/island.png"
+
+let DomP3 = `
+
+<h1 class="text-light py-2">03</h1>
+
+<h2 class="text-light py-2 mt-3">Bondi landing page</h2>
+
+<p class="text-light text-white-50 fz mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    Mollitia ratione placeat
+</p>
+
+<span class="coloring-text mt-2">Html 5, Css 3, Javascript,bootstrap</span>
+
+<hr class="text-white-50 m-5">
+
+
+<div class="open-btn d-flex align-items-center justify-content-center gap-3">
+    <span class="icon fs-2 px-3 py-2">
+        <a target="_blank" href="https://fares12358.github.io/new-Bondi">
+            <i class="fa-solid fa-arrow-up-right-from-square text-light"></i>
+        </a>
+    </span>
+    <span class="icon fs-2 px-3 py-2 ">
+        <a target="_blank" href="https://github.com/fares12358/new-Bondi">
+            <i class="fa-brands fa-github text-light"></i>
+        </a>
+    </span>
+
+</div>
+
+<hr class="text-white-50 m-5">
+
+<div class="btn-view  mt-5 d-flex align-items-center justify-content-center gap-3">
+    <span class="go-back" onclick="viewProject(2)" ><i class="fa-solid fa-arrow-left"></i></span>
+    <span class="go-next" onclick="viewProject(1)"><i class="fa-solid fa-arrow-right"></i></span>
+</div>
+
+`;
+
+let btnNext = document.querySelectorAll(".btn-view go-next");
+
+let btnBack = document.querySelectorAll(".btn-view go-back");
+
+
+function viewProject(i) {
+    if (i === 1) {
+        textViewerDom.innerHTML = DomP1;
+        imgProject.src = "img/Untitled.png";
+    }
+    else if (i === 2) {
+        textViewerDom.innerHTML = DomP2;
+        imgProject.src = "img/island.png";
+
+    } else if (i === 3) {
+        textViewerDom.innerHTML = DomP3;
+        imgProject.src = "img/Untitled (1).png";
+
+    }
 }
