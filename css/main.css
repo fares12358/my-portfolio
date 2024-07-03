@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Exo 2", sans-serif;
+    user-select: none;
 }
 
 :root {
@@ -310,13 +311,6 @@ li svg {
 }
 
 
-
-
-
-
-
-
-
 /*                 ////////////////////////////////                      */
 
 
@@ -336,8 +330,7 @@ li svg {
     border-radius: 10px;
     cursor: pointer;
 }
-.work .image{
-}
+
 .work .image img{
     max-width: 100%;
     height: auto;

@@ -163,7 +163,7 @@ let aboutDom = `
                         Experience 2+ years <br>
                         Nationality Egyptian <br>
                         Email fm883254@gmail.com <br>
-                        Language b2 English
+                        Language b1 English
                     </p>
 `;
 
