@@ -1,94 +1,85 @@
-
 let getCv = document.getElementById("getCV");
 
 getCv.onclick = function () {
+  let fileUrl = "cv.pdf";
 
-    let fileUrl = 'cv.pdf';
+  // Create a temporary anchor element
+  let link = document.createElement("a");
+  link.href = fileUrl;
+  link.download = "cv.pdf";
 
-    // Create a temporary anchor element
-    let link = document.createElement('a');
-    link.href = fileUrl;
-    link.download = 'cv.pdf';
+  document.body.appendChild(link);
 
-    document.body.appendChild(link);
+  link.click();
 
-    link.click();
-
-    document.body.removeChild(link);
-}
+  document.body.removeChild(link);
+};
 
 let bgAnim = document.querySelectorAll(".bg-anim div");
 
-window.addEventListener('load', function () {
-    bgAnim.forEach((ele) => {
-        ele.classList.add("animBg");
-    });
+window.addEventListener("load", function () {
+  bgAnim.forEach((ele) => {
+    ele.classList.add("animBg");
+  });
 });
-
 
 let sections = document.querySelectorAll("section");
 let home = document.querySelector(".intro");
 let homeBtn = document.querySelector(".home-btn");
 
 homeBtn.onclick = function () {
+  bgAnim.forEach((ele) => {
+    ele.classList.add("animBg");
+  });
 
-    bgAnim.forEach((ele) => {
-        ele.classList.add("animBg");
-    })
-
-    sections.forEach((ele) => {
-        ele.style.display = "none";
-    });
-    home.style.display = "block";
-
-}
+  sections.forEach((ele) => {
+    ele.style.display = "none";
+  });
+  home.style.display = "block";
+};
 
 let servicesCon = document.querySelector(".services-content");
 let servicesBtn = document.querySelector(".services-btn");
 
 servicesBtn.onclick = function () {
-    bgAnim.forEach((ele) => {
-        ele.classList.remove("animBg");
-    })
-    sections.forEach((ele) => {
-        ele.style.display = "none";
-    });
-    servicesCon.style.display = "block";
-
-}
+  bgAnim.forEach((ele) => {
+    ele.classList.remove("animBg");
+  });
+  sections.forEach((ele) => {
+    ele.style.display = "none";
+  });
+  servicesCon.style.display = "block";
+};
 
 let resume = document.querySelector(".resume");
 let resumeBtn = document.querySelector(".resume-btn");
 
 resumeBtn.onclick = function () {
+  bgAnim.forEach((ele) => {
+    ele.classList.remove("animBg");
+  });
 
-    bgAnim.forEach((ele) => {
-        ele.classList.remove("animBg");
-    })
+  sections.forEach((ele) => {
+    ele.style.display = "none";
+  });
 
-    sections.forEach((ele) => {
-        ele.style.display = "none";
-    });
-
-    resume.style.display = "block";
-
-}
+  resume.style.display = "block";
+};
 
 let work = document.querySelector(".work");
 let workBtn = document.querySelector(".work-btn");
 
 workBtn.onclick = function () {
-    bgAnim.forEach((ele) => {
-        ele.classList.remove("animBg");
-    })
+  bgAnim.forEach((ele) => {
+    ele.classList.remove("animBg");
+  });
 
-    sections.forEach((ele) => {
-        ele.style.display = "none";
-    });
+  sections.forEach((ele) => {
+    ele.style.display = "none";
+  });
 
-    work.style.display = "block";
-
-}
+  work.style.display = "block";
+};
 
 let btnRes = document.querySelectorAll(".btns-dom button");
 let domViewer = document.querySelector(".resume .dom-viewer");
@@ -118,7 +109,7 @@ let educationDom = `
                                 Study the basic principles of programming languages using Python, C, and C++
                             </h5>
                         </div>
-                        <div class="data-card col-md-5 col-12 p-3">
+                        <div class="data-card col-md-5 col-12 p-3 mt-3">
                             <p class="">2022 - 2024</p>
                             <h5 class="text-light py-2 ">
                                 Study the front-end and learn the programming languages html, css, and js
@@ -147,7 +138,9 @@ let skillsDom = `
                         <div class="data-card p-3 col-sm-12 col-md-4 col-lg-2 d-flex align-items-center justify-content-center">
                             <i class="fa-brands fa-github text-light"></i>
                         </div>
-
+                        <div class="data-card p-3 col-sm-12 col-md-4 col-lg-2 d-flex align-items-center justify-content-center">
+                            <i class="fa-brands fa-react text-light"></i>
+                        </div>
                     </div>
 
 `;
@@ -168,37 +161,34 @@ let aboutDom = `
 `;
 
 function DomFunction(i) {
+  if (i === 1) {
+    domViewer.innerHTML = experinceDom;
+    btnActive = btnRes[0];
+  } else if (i === 2) {
+    domViewer.innerHTML = educationDom;
+    btnActive = btnRes[1];
+  } else if (i === 3) {
+    domViewer.innerHTML = skillsDom;
+    btnActive = btnRes[2];
+  } else if (i === 4) {
+    domViewer.innerHTML = aboutDom;
+    btnActive = btnRes[3];
+  } else {
+    domViewer.innerHTML = experinceDom;
+    btnActive = btnRes[0];
+  }
 
-    if (i === 1) {
-        domViewer.innerHTML = experinceDom;
-        btnActive = btnRes[0];
-    } else if (i === 2) {
-        domViewer.innerHTML = educationDom;
-        btnActive = btnRes[1];
-    } else if (i === 3) {
-        domViewer.innerHTML = skillsDom;
-        btnActive = btnRes[2];
-    } else if (i === 4) {
-        domViewer.innerHTML = aboutDom;
-        btnActive = btnRes[3];
-    } else {
-        domViewer.innerHTML = experinceDom;
-        btnActive = btnRes[0];
-    }
-
-    btnRes.forEach((ele) => {
-        ele.classList.remove("active");
-        btnActive.classList.add("active");
-    });
+  btnRes.forEach((ele) => {
+    ele.classList.remove("active");
+    btnActive.classList.add("active");
+  });
 }
 
 ///////////////////////////////////////////////////////////////////////////////
 
-
 let imgProject = document.querySelector(".image-holder .image img");
 
 let textViewerDom = document.querySelector(".text-holder");
-
 
 let DomP1 = `
 
@@ -240,8 +230,6 @@ let DomP1 = `
 `;
 
 // "img/Untitled.png";
-
-
 
 let DomP2 = `
 
@@ -326,19 +314,15 @@ let btnNext = document.querySelectorAll(".btn-view go-next");
 
 let btnBack = document.querySelectorAll(".btn-view go-back");
 
-
 function viewProject(i) {
-    if (i === 1) {
-        textViewerDom.innerHTML = DomP1;
-        imgProject.src = "img/Untitled.png";
-    }
-    else if (i === 2) {
-        textViewerDom.innerHTML = DomP2;
-        imgProject.src = "img/island.png";
-
-    } else if (i === 3) {
-        textViewerDom.innerHTML = DomP3;
-        imgProject.src = "img/Untitled (1).png";
-
-    }
+  if (i === 1) {
+    textViewerDom.innerHTML = DomP1;
+    imgProject.src = "img/Untitled.png";
+  } else if (i === 2) {
+    textViewerDom.innerHTML = DomP2;
+    imgProject.src = "img/island.png";
+  } else if (i === 3) {
+    textViewerDom.innerHTML = DomP3;
+    imgProject.src = "img/Untitled (1).png";
+  }
 }
