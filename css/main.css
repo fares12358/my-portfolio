@@ -310,6 +310,10 @@ li svg {
     font-size: 80px !important;
 }
 
+.resume .data-card .image{
+  max-width:75px;
+  max-height:75px;
+}
 
 /*                 ////////////////////////////////                      */
 

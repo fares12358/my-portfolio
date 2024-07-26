@@ -138,8 +138,32 @@ let skillsDom = `
                         <div class="data-card p-3 col-sm-12 col-md-4 col-lg-2 d-flex align-items-center justify-content-center">
                             <i class="fa-brands fa-github text-light"></i>
                         </div>
+                          <div class="data-card p-3 col-sm-12 col-md-4 col-lg-2 d-flex align-items-center justify-content-center">
+                            <i class="fa-brands fa-git-alt text-light"></i>
+                        </div>
                         <div class="data-card p-3 col-sm-12 col-md-4 col-lg-2 d-flex align-items-center justify-content-center">
                             <i class="fa-brands fa-react text-light"></i>
+                        </div>
+                        <div class="data-card p-3 col-sm-12 col-md-4 col-lg-2 d-flex align-items-center justify-content-center">
+                          <div class="image">
+                              <img class="img-fluid" src="./img/jest-svgrepo-com (1).png" alt="not found">
+                          </div>
+                        </div>
+                        <div class="data-card p-3 col-sm-12 col-md-4 col-lg-2 d-flex align-items-center justify-content-center">
+                          <div class="image">
+                                  <img class="img-fluid" src="./img/tailwind-svgrepo-com (1).png" alt="not found">
+                          </div>
+                        </div>
+                        <div class="data-card p-3 col-sm-12 col-md-4 col-lg-2 d-flex align-items-center justify-content-center">
+                          <div class="image">
+                                <img class="img-fluid" src="./img/jquery-svgrepo-com.png" alt="not found">
+>
+                          </div>
+                        </div>
+                        <div class="data-card p-3 col-sm-12 col-md-4 col-lg-2 d-flex align-items-center justify-content-center">
+                          <div class="image">
+                                    <img class="img-fluid" src="./img/json-svgrepo-com (1).png" alt="not found">
+                          </div>
                         </div>
                     </div>
 
