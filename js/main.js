@@ -87,7 +87,8 @@ let btnActive;
 
 let experinceDom = `
                     <h1 class="text-light fw-bold">My experience</h1>
-                    <p class="text-white-50 lh-lg my-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit exercitationem corporis recusandae, repudiandae illo quia at ad ex doloremque deleniti.
+                    <p class="text-white-50 lh-lg my-5">
+                    I started learning front-end development in 2021 and have been continuously practicing and improving my coding skills. I am dedicated to enhancing my abilities in coding and organizing my work to produce high-quality
                     </p>
                     <div class="row ">
                         <div class="data-card col-md-6 col-12 text-center py-4">
@@ -100,7 +101,8 @@ let experinceDom = `
 
 let educationDom = `
                     <h1 class="text-light fw-bold">My education</h1>
-                    <p class="text-white-50 lh-lg my-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit exercitationem corporis recusandae, repudiandae illo quia at ad ex doloremque deleniti.
+                    <p class="text-white-50 lh-lg my-5">
+                    I am currently a second-year student at New Cairo Technology College, specializing in Information Technology (IT) as a software developer
                     </p>
                     <div class="row justify-content-around ">
                         <div class="data-card col-md-5 col-12 p-3">
@@ -119,8 +121,16 @@ let educationDom = `
 `;
 let skillsDom = `
                     <h1 class="text-light fw-bold">My skills</h1>
-                    <p class="text-white-50 lh-lg my-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
-                        exercitationem corporis recusandae, repudiandae illo quia at ad ex doloremque deleniti.
+                    <p class="text-white-50 lh-lg my-5">
+Proficient in creating structured and semantic web pages using HTML5.
+Skilled in designing responsive and visually appealing layouts with CSS3.
+Experienced in developing dynamic and interactive web applications using JavaScript.
+Knowledgeable in using Bootstrap framework for building responsive and mobile-first websites.
+Proficient in version control using Git for collaborative development.
+Adept at building modern web applications with React, focusing on component-based architecture.
+Experienced in using GitHub for code hosting, collaboration, and version control.
+Skilled in using Tailwind CSS for rapidly creating custom designs.
+Familiar with using jQuery for simplifying JavaScript programming and handling events.
                     </p>
                     <div class="row gap-3 justify-content-around justify-content-around ">
                         <div class="data-card p-3 col-sm-12  col-md-4 col-lg-2 d-flex align-items-center justify-content-center">
@@ -171,8 +181,10 @@ let skillsDom = `
 
 let aboutDom = `
                     <h1 class="text-light fw-bold">About me</h1>
-                    <p class="text-white-50 lh-lg my-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
-                        exercitationem corporis recusandae, repudiandae illo quia at ad ex doloremque deleniti.
+                    <p class="text-white-50 lh-lg my-5">
+                      I am Fares, a passionate front-end developer with a strong foundation in HTML, CSS, JavaScript, and Bootstrap. Currently, I am a second-year student at New Cairo Technology College, specializing in Information Technology (IT) as a software developer. My journey in front-end development began in 2021, and since then, I have been committed to honing my skills and expanding my knowledge in web development.
+                      I have a keen interest in creating interactive and user-friendly web applications. My skills include working withReact to build modern web applications, utilizing Git for version control, and employing Tailwind CSS for rapid design development. I am also familiar with using GitHub for code collaboration and jQuery for simplifying                      JavaScript programming.
+                      My goal is to continuously improve my coding abilities and stay updated with the latest industry trends to deliver high-quality, efficient code. I am dedicated to producing visually appealing and responsive websites that provide an excellent user experience.
                     </p>
                     <p class="text-light fs-5 lh-lg">
                         Name fares mohamed <br>
@@ -221,11 +233,11 @@ let DomP1 = `
 
 <h2 class="text-light py-2 mt-3">404 Page</h2>
 
-<p class="text-light text-white-50 fz mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    Mollitia ratione placeat
+<p class="text-light text-white-50 fz mt-3">
+A 404 Error not found page design
 </p>
 
-<span class="coloring-text mt-2">Html 5, Css 3, Javascript</span>
+<span class="coloring-text mt-2">Html 5, Css 3, Javascript and bootstrap</span>
 
 <hr class="text-white-50 m-5">
 
@@ -261,11 +273,11 @@ let DomP2 = `
 
 <h2 class="text-light py-2 mt-3">island landing page</h2>
 
-<p class="text-light text-white-50 fz mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    Mollitia ratione placeat
+<p class="text-light text-white-50 fz mt-3">
+A landing pag for travel island web site
 </p>
 
-<span class="coloring-text mt-2">Html 5, Css 3, Javascript</span>
+<span class="coloring-text mt-2">Html 5, Css 3, Javascript and bootstrap</span>
 
 <hr class="text-white-50 m-5">
 
@@ -302,11 +314,11 @@ let DomP3 = `
 
 <h2 class="text-light py-2 mt-3">Bondi landing page</h2>
 
-<p class="text-light text-white-50 fz mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    Mollitia ratione placeat
+<p class="text-light text-white-50 fz mt-3">
+A simple Bondi design for responsive  web site
 </p>
 
-<span class="coloring-text mt-2">Html 5, Css 3, Javascript,bootstrap</span>
+<span class="coloring-text mt-2">Html 5, Css 3, Javascript and bootstrap</span>
 
 <hr class="text-white-50 m-5">
 
