@@ -259,7 +259,7 @@ A 404 Error not found page design
 <hr class="text-white-50 m-5">
 
 <div class="btn-view  mt-5 d-flex align-items-center justify-content-center gap-3">
-    <span class="go-back" onclick="viewProject(3)" ><i class="fa-solid fa-arrow-left"></i></span>
+    <span class="go-back" onclick="viewProject(4)" ><i class="fa-solid fa-arrow-left"></i></span>
     <span class="go-next" onclick="viewProject(2)"><i class="fa-solid fa-arrow-right"></i></span>
 </div>
 
@@ -341,6 +341,45 @@ A simple Bondi design for responsive  web site
 
 <div class="btn-view  mt-5 d-flex align-items-center justify-content-center gap-3">
     <span class="go-back" onclick="viewProject(2)" ><i class="fa-solid fa-arrow-left"></i></span>
+    <span class="go-next" onclick="viewProject(4)"><i class="fa-solid fa-arrow-right"></i></span>
+</div>
+
+`;
+
+
+let DomP4 = `
+
+<h1 class="text-light py-2">04</h1>
+
+<h2 class="text-light py-2 mt-3">Mobile back cover</h2>
+
+<p class="text-light text-white-50 fz mt-3">
+A simple e-commerce design for mobile cover
+</p>
+
+<span class="coloring-text mt-2">Html 5, Css 3, Javascript , react and bootstrap</span>
+
+<hr class="text-white-50 m-5">
+
+
+<div class="open-btn d-flex align-items-center justify-content-center gap-3">
+    <span class="icon fs-2 px-3 py-2">
+        <a target="_blank" href="https://fares12358.github.io/online-shop-with-react/">
+            <i class="fa-solid fa-arrow-up-right-from-square text-light"></i>
+        </a>
+    </span>
+    <span class="icon fs-2 px-3 py-2 ">
+        <a target="_blank" href="https://github.com/fares12358/online-shop-with-react">
+            <i class="fa-brands fa-github text-light"></i>
+        </a>
+    </span>
+
+</div>
+
+<hr class="text-white-50 m-5">
+
+<div class="btn-view  mt-5 d-flex align-items-center justify-content-center gap-3">
+    <span class="go-back" onclick="viewProject(3)" ><i class="fa-solid fa-arrow-left"></i></span>
     <span class="go-next" onclick="viewProject(1)"><i class="fa-solid fa-arrow-right"></i></span>
 </div>
 
@@ -360,5 +399,9 @@ function viewProject(i) {
   } else if (i === 3) {
     textViewerDom.innerHTML = DomP3;
     imgProject.src = "img/Untitled (1).png";
+  }
+  else if (i === 4) {
+    textViewerDom.innerHTML = DomP4;
+    imgProject.src = "img/backApp.png";
   }
 }
